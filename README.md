@@ -32,19 +32,19 @@ How It Works
 
 Installation
 
-    Clone this repository:
+Clone this repository:
 
-git clone <this-repo>
-cd custom-job-runner
+    git clone the repo
+    cd custom-job-runner
 
 Install dependencies:
 
-composer install
+    composer install
 
 Configure the environment variables in .env:
 
-APP_ENV=local
-LOG_CHANNEL=stack
+    APP_ENV=local
+    LOG_CHANNEL=stack
 
 Set file permissions for logs:
 
@@ -53,7 +53,7 @@ Set file permissions for logs:
 
 Usage
 
-    Dispatching a Background Job
-    Call the runBackgroundJob() helper to execute a job:
+Dispatching a Background Job
+Call the runBackgroundJob() helper to execute a job:
 
-runBackgroundJob(\App\Jobs\ExampleJob::class, 'process', ['param1']);
+    runBackgroundJob(\App\Jobs\ExampleJob::class, 'process', ['param1']);
